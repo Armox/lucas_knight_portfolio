@@ -4,4 +4,78 @@
 
 .main-header {
     height: 100vh;
+    background: -webkit-linear-gradient(90deg, #0d626c 0%, #121c44 100%);
+    background: -moz-linear-gradient(90deg, #0d626c 0%, #121c44 100%);
+    background: -o-linear-gradient(90deg, #0d626c 0%, #121c44 100%);
+    background: -ms-linear-gradient(90deg, #0d626c 0%, #121c44 100%);
+    background: linear-gradient(0deg, #0d626c 0%, #121c44 100%);
+    &__content {
+        text-align: center;
+    }
+    &__nav {
+        &__name {
+            margin: 0;
+        }
+        &__list {
+            
+        }
+        &__list__item {
+            display: inline-block;
+        }
+    }
 }
+
+.about-section {
+    background: #fefefe;
+    text-align: center;
+
+    &__img {
+        width: 220px;
+        border-radius: 50%;
+    }
+    &__list {
+
+        &__item {
+            display: inline-block;
+        }
+    }
+}
+
+.skills-section {
+    background: #f7f7f7;
+    &__list {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: repeat(6, 1fr);
+        padding: 0;
+        text-align: center;
+        max-width: 900px;
+        margin: 0 auto;
+        &__item {
+            // display: block;
+            display: inline-block;
+            width: 100px;
+        }
+    }
+}
+
+.portfolio-section {
+    &__gallery {
+        max-width: 900px;
+        margin: 0 auto;
+        &__item:nth-of-type(even) {
+            display: grid;
+            grid-template-columns: 4fr 1fr;
+        }
+        &__gallery:nth-of-type(odd) {
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+        }
+    }
+}
+
+// .skills-section > img {
+//     width: 100%;
+//     height: 100%;
+// }
