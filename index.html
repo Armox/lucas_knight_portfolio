@@ -4,25 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Raleway:500,700|Titillium+Web" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"              integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="./public/styles/style.css">
     <title>Lucas Knight</title>
 </head>
 <body>
     <header class="main-header">
-        <nav class="main-header__nav">
-            <h2 class="main-header__nav__name">Lucas Knight</h2>
-            <ul class="main-header__nav__list">
-                <li class="main-header__nav__list__item"><a href="#">home</a></li>
-                <li class="main-header__nav__list__item"><a href="#">about</a></li>
-                <li class="main-header__nav__list__item"><a href="#">portfolio</a></li>
-                <li class="main-header__nav__list__item"><a href="#">contact</a></li>
-            </ul>
-        </nav>
+        <div class="main-header__nav--border">
+            <nav class="main-header__nav">
+                <h2 class="main-header__nav__name">Lucas knight</h2>
+                <ul class="main-header__nav__list">
+                    <li class="item"><a href="#" class="main-header__nav__list__item">home</a></li>
+                    <li class="item"><a href="#" class="main-header__nav__list__item">about</a></li>
+                    <li class="item"><a href="#" class="main-header__nav__list__item">portfolio</a></li>
+                    <li class="item"><a href="#" class="main-header__nav__list__item">contact</a></li>
+                </ul>
+            </nav>
+        </div>
         <div class="main-header__content">
             <h3>Hello!</h3>
-            <h1>i am lucas knight</h1>
-            <h2>Front End Web Developer</h2>
-            <button>download cv</button>
+            <h1>i am lucas</h1>
+            <h2 class="main-header__content__cursive">Front-end Web Developer</h2>
+            <button class="main-header__content__btn">download cv</button>
         </div>
     </header>
     <section class="about-section">
@@ -30,50 +35,53 @@
         <img src="public/assets/images/portrait.jpg" alt="Portrait Photograph" class="about-section__img">
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia autem, recusandae itaque nam velit tenetur ullam. Consequuntur ut tempora dicta quisquam voluptatem vero possimus, quasi expedita exercitationem dolorem distinctio? Neque.</p>
         <ul class="about-section__list">
-            <li class="about-section__list__item"><a href="#">twitter</a></li>
-            <li class="about-section__list__item"><a href="#">deviantArt</a></li>
-            <li class="about-section__list__item"><a href="#">linkedIn</a></li>
+            <li class="about-section__list__item">
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+            </li>
+            <li class="about-section__list__item">
+                <a href="#"><i class="fab fa-deviantart"></i></a></li>
+            <li class="about-section__list__item">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </li>
         </ul>
     </section>
+     <!-- ==== SKILLS SECTION ==== -->
     <section class="skills-section">
+        <h3>skills</h3>
         <ul class="skills-section__list">
             
             <li class="skills-section__list__item">
                 <img src="../public/assets/icons/css3.svg" alt="css3 icon">
-                <h4 >css3</h4>
             </li>
             
             <li class="skills-section__list__item">
                 <img src="../public/assets/icons/html5.svg" alt="html5 icon">
-                <h4>html5</h4>
             </li>
             
             <li class="skills-section__list__item">
                 <img src="../public/assets/icons/javaScript.svg" alt="JavaScript icon">
-                <h4>JavaScript</h4>
             </li>
             
             <li class="skills-section__list__item">
                 <img src="../public/assets/icons/react.svg" alt="react icon">
-                <h4>React</h4>
             </li>
-            
+
             <li class="skills-section__list__item">
                 <img src="../public/assets/icons/jquery.svg" alt="jQuert icon">
-                <h4>jQuery</h4>
             </li>
 
             <li class="skills-section__list__item icon--sass">
                 <img src="../public/assets/icons/sass.svg" alt="sass icon">
-                <h4>sass</h4>
             </li>
         </ul>
     </section>
+     <!-- ==== PORTFOLIO SECTION ==== -->
     <section class="portfolio-section">
         <h3>portfolio</h3>
         <div class="portfolio-section__gallery">
             <div class="portfolio-section__gallery__item">
-                <img src="https://source.unsplash.com/random/200x200" alt="">
+                <img src="https://source.unsplash.com/random/200x200" alt=""
+                    class="portfolio-section__gallery__item__img">
                 <div class="portfolio-section__gallery__item__text">
                     <h4>project title</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere repudiandae ea doloremque perspiciatis voluptatum aut inventore modi magni temporibus non.</p>
@@ -84,23 +92,24 @@
                     <h4>project title</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere repudiandae ea doloremque perspiciatis voluptatum aut inventore modi magni temporibus non.</p>
                 </div>
-                <img src="https://source.unsplash.com/random/200x200" alt="">
+                <img src="https://source.unsplash.com/random/200x200" alt="" 
+                    class="portfolio-section__gallery__item__img">
             </div>
             <div class="portfolio-section__gallery__item">
-                <img src="https://source.unsplash.com/random/200x200" alt="">
+                <img src="https://source.unsplash.com/random/200x200" alt=""
+                    class="portfolio-section__gallery__item__img">
                 <div class="portfolio-section__gallery__item__text">
                     <h4>project title</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere repudiandae ea doloremque perspiciatis voluptatum aut
-                        inventore modi magni temporibus non.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere repudiandae ea doloremque perspiciatis voluptatum aut inventore modi magni temporibus non.</p>
                 </div>
             </div>
             <div class="portfolio-section__gallery__item">
                 <div class="portfolio-section__gallery__item__text">
                     <h4>project title</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere repudiandae ea doloremque perspiciatis voluptatum aut
-                        inventore modi magni temporibus non.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere repudiandae ea doloremque perspiciatis voluptatum aut inventore modi magni temporibus non.</p>
                 </div>
-                <img src="https://source.unsplash.com/random/200x200" alt="">
+                <img src="https://source.unsplash.com/random/200x200" alt=""
+                    class="portfolio-section__gallery__item__img">
             </div>
             <div class="portfolio-section__gallery__item">
                 <img src="https://source.unsplash.com/random/200x200" alt="">
@@ -111,11 +120,56 @@
             </div>
         </div>
     </section>
+    <!-- ==== CONTACT SECTION ==== -->
     <section class="contact-section">
-
+        <h3>get in touch</h3>
+        <div class="contact-section__content">
+            <ul>
+                <li>
+                    <h4>see me</h4>
+                    <p>798 Richmond St. W. Toronto</p>
+                </li>
+                <li>
+                    <h4>call me</h4>
+                    <p>(+1)647-447-9913</p>
+                </li>
+                <li>
+                    <h4>write me</h4>
+                    <p>mail@lucas-knight.com</p>
+                </li>
+            </ul>
+            <form action="#" class="contact-section__content__form">
+                <div>
+                    <input type="text">
+                    <input type="email">
+                </div>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <input type="submit">
+            </form>
+        </div>
     </section>
     <footer class="main-footer">
-
+        <div class="main-footer__content">
+            <h2 class="main-footer__name">Lucas knight</h2>
+            <ul class="main-footer__list">
+                <li class="main-footer__list__item">
+                    <a href="#">
+                        <i class="fab fa-twitter-square"></i>
+                    </a>
+                </li>
+                <li class="main-footer__list__item">
+                    <a href="#">
+                        <i class="fab fa-deviantart"></i>
+                    </a>
+                </li>
+                <li class="main-footer__list__item">
+                    <a href="#">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+            <p class="main-footer__copy">&copy;2018 Lucas Knight</p>
+        </div>
     </footer>
 </body>
 </html>
