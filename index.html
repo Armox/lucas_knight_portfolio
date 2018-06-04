@@ -11,6 +11,7 @@
     <title>Lucas Knight</title>
 </head>
 <body>
+    <!-- ==== HEADER ==== -->
     <header class="main-header">
         <div class="main-header__nav--border">
             <nav class="main-header__nav">
@@ -30,24 +31,26 @@
             <button class="main-header__content__btn">download cv</button>
         </div>
     </header>
+    <!-- ==== ABOUT-SECTION ==== -->
     <section class="about-section">
-        <h3>about me</h3>
-        <img src="public/assets/images/portrait.jpg" alt="Portrait Photograph" class="about-section__img">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia autem, recusandae itaque nam velit tenetur ullam. Consequuntur ut tempora dicta quisquam voluptatem vero possimus, quasi expedita exercitationem dolorem distinctio? Neque.</p>
-        <ul class="about-section__list">
-            <li class="about-section__list__item">
-                <a href="#"><i class="fab fa-twitter-square"></i></a>
-            </li>
-            <li class="about-section__list__item">
-                <a href="#"><i class="fab fa-deviantart"></i></a></li>
-            <li class="about-section__list__item">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-            </li>
-        </ul>
+        <div class="about-section__content">
+            <h3 class="about-section__title">about me</h3>
+            <img src="public/assets/images/portrait.jpg" alt="Portrait Photograph" class="about-section__img">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia autem, recusandae itaque nam velit tenetur ullam. Consequuntur ut tempora dicta quisquam voluptatem vero possimus, quasi expedita exercitationem dolorem distinctio? Neque.</p>
+            <ul class="about-section__list">
+                <li class="about-section__list__item">
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                </li>
+                <li class="about-section__list__item">
+                    <a href="#"><i class="fab fa-deviantart"></i></a></li>
+                <li class="about-section__list__item">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </li>
+            </ul>
+        </div>
     </section>
      <!-- ==== SKILLS SECTION ==== -->
     <section class="skills-section">
-        <h3>skills</h3>
         <ul class="skills-section__list">
             
             <li class="skills-section__list__item">
@@ -63,11 +66,11 @@
             </li>
             
             <li class="skills-section__list__item">
-                <img src="../public/assets/icons/react.svg" alt="react icon">
+                <img src="../public/assets/icons/jquery.svg" alt="jQuert icon">
             </li>
 
             <li class="skills-section__list__item">
-                <img src="../public/assets/icons/jquery.svg" alt="jQuert icon">
+                <img src="../public/assets/icons/react.svg" alt="react icon">
             </li>
 
             <li class="skills-section__list__item icon--sass">
@@ -77,8 +80,8 @@
     </section>
      <!-- ==== PORTFOLIO SECTION ==== -->
     <section class="portfolio-section">
-        <h3>portfolio</h3>
         <div class="portfolio-section__gallery">
+            <h3 class="portfolio-section__title">portfolio</h3>
             <div class="portfolio-section__gallery__item">
                 <img src="https://source.unsplash.com/random/200x200" alt=""
                     class="portfolio-section__gallery__item__img">
@@ -122,32 +125,43 @@
     </section>
     <!-- ==== CONTACT SECTION ==== -->
     <section class="contact-section">
-        <h3>get in touch</h3>
+        <h3 class="contact-section__title">get in touch</h3>
         <div class="contact-section__content">
-            <ul>
-                <li>
+            <ul class="contact-section__content__side-bar fa-ul">
+                <li class="contact-section__content__side-bar__item">
+                    <span class="fa-li">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </span>
                     <h4>see me</h4>
                     <p>798 Richmond St. W. Toronto</p>
                 </li>
-                <li>
+                <li class="contact-section__content__side-bar__item">
+                    <span class="fa-li">
+                        <i class="fas fa-phone"></i>
+                    </span>
                     <h4>call me</h4>
                     <p>(+1)647-447-9913</p>
                 </li>
-                <li>
+                <li class="contact-section__content__side-bar__item">
+                    <span class="fa-li">
+                        <i class="far fa-envelope"></i>
+                    </span>
                     <h4>write me</h4>
                     <p>mail@lucas-knight.com</p>
                 </li>
             </ul>
             <form action="#" class="contact-section__content__form">
-                <div>
-                    <input type="text">
-                    <input type="email">
+                <div class="contact-section__content__form__top-row">
+                    <input type="text" class="contact-section__content__form__top-row__name"    placeholder="Name">
+                    <input type="email" class="contact-section__content__form__top-row__email" placeholder="E-mail">
                 </div>
-                <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                <input type="submit">
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message..." 
+                    class="contact-section__content__form__message"></textarea>
+                <input type="submit" class="contact-section__content__form__btn" value="SEND">
             </form>
         </div>
     </section>
+    <!-- ==== FOOTER ==== -->
     <footer class="main-footer">
         <div class="main-footer__content">
             <h2 class="main-footer__name">Lucas knight</h2>
