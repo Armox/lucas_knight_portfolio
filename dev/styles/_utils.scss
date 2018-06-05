@@ -1,3 +1,8 @@
+// Break point variables
+$break1: 700px;
+$break2: 550px;
+
+// Universal button styling
 %btn {
     height: 58px;
     width: 236px;
@@ -11,4 +16,14 @@
     font-size: 1.25rem;
     font-weight: 700;
     line-height: 1.8;
+    @media screen and (max-width: $break1){
+        width: 200px;
+        height: 50px;
+        font-size: 1rem;
+    }
+    @media screen and (max-width: $break1){
+        width: 176px;
+        font-size: 0.8rem;
+        height: 44px;
+    }
 }
