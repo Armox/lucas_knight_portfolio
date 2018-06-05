@@ -26,4 +26,7 @@ $break2: 550px;
         font-size: 0.8rem;
         height: 44px;
     }
+    &:hover {
+        transform: scale(1.1);
+    }
 }

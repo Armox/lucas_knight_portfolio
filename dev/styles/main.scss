@@ -1,3 +1,8 @@
+// font-smoothing
+// Raleway font spelled incorrectly
+// fix padding on nav bar
+// hover on buttons
+
 @import 'setup';
 @import 'utils';
 @import 'typography';
@@ -33,6 +38,12 @@
         max-width: 900px;
         margin: 0 auto;
     }
+    &__word {
+        padding: 26px 20px;
+        @media screen and (max-width: $break1){
+            padding: 26px 10px;
+        }
+    }
     &__name {
         text-align: left;
         line-height: 70px;
@@ -56,25 +67,21 @@
         display: block;
         color: #ffffff;
         line-height: 70px;
-        width: 100px;
-        height: 100%;
         text-transform: uppercase;
         transition:background 0.4s ease-out;
         @media screen and (max-width: $break1){
             font-size: .8rem;
-            width: 80px;
         }
 
             &:hover {
                 background: rgba(255, 255, 255, 0.32);
-                border-left: 1px solid rgba(255, 255, 255, 0.32);
                 color: #ffffff;
                 transition:background .01s ease-in;
             }
     }
     &__menu li{
         display: inline-block;
-        height: 100%;
+        // height: 100%;
     }
 }
 
@@ -125,13 +132,19 @@ label {
     &__content {
         width: 80%;
         margin: 80px auto;
-
+        @media screen and (max-width: $break1){
+            margin: 40px auto;
+        }
     }
     &__img {
         width: 220px;
         border-radius: 50%;
         margin-top: 90px;
         margin-bottom: 32px;
+        @media screen and (max-width: $break1){
+            margin-top: 60px;
+            margin-bottom: 20px;
+        }
     }
 
     &__title {
@@ -156,6 +169,9 @@ label {
         width: 100%;
         padding: 0;
         margin: 62px auto;
+        @media screen and (max-width: $break1){
+            margin: 40px auto;
+        }
         &__item {
             display: inline-block;
             color: #49848f;
@@ -179,14 +195,22 @@ label {
         padding: 0;
         text-align: center;
         max-width: 900px;
-        margin: 73px auto;
+        margin: 60px auto;
+        @media screen and (max-width: $break1){
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr 1fr;
+
+        }
         &__item {
             display: inline-block;
             width: 80%;
         }
          &__item:nth-of-type(n+4) {
             align-self: center;
-         }
+            @media screen and (max-width: $break1) {
+                align-self: end;
+            }
+        }
     }
 }
 
@@ -196,8 +220,8 @@ label {
         background: #f7f7f7;
         position: relative;
         color: #1c555f;
-        margin-bottom: 65px;
-        padding-top: 80px;
+        margin-bottom: 90px;
+        padding-top: 90px;
         &::after {
             content: "";
             display: block;
@@ -213,13 +237,18 @@ label {
     &__gallery {
         max-width: 900px;
         margin: 0 auto;
-        padding-bottom: 80px;
         background: #f7f7f7;
         color: #1c555f;
         &__item {
             display: grid;
             grid-template-columns: 200px 1fr 200px;
             grid-gap: 16px;
+            padding: 32px;
+            @media screen and (max-width: $break2) {
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-gap: 0;
+            }
         }
         &__item__text a{
             margin-right: 20px;
@@ -231,19 +260,31 @@ label {
             border: 1.5px solid #1c555f;
             padding: 2px;
             border-radius: 2px;
+            @media screen and (max-width: $break2) {
+                grid-row: 1;
+                margin: 0 auto;
+            }
         }
         &__item:nth-of-type(even) {
             background: #ffffff;
          }
         &__item__text:nth-of-type(odd) {
             grid-column: 2;
-            margin-left: 16px;
+            margin: 0 16px;
+            @media screen and (max-width: 800px) {
+                grid-column: 2 / 4;
+            }
+            @media screen and (max-width: $break2) {
+                grid-column: 1;
+            }
         }
         &__item__img:nth-of-type(even) {
             grid-column-start: 3;
             width: 100%;
             background: #ffffff;
-
+            @media screen and (max-width: $break2) {
+                // grid-column-start: 1;
+            }
         }    
     }
 }
@@ -283,16 +324,20 @@ label {
             display: grid;
             grid-template-rows: 58px 3fr 58px;
             grid-row-gap: 30px;
+            @media screen and (max-width: $break1) {
+            
+            }
         }
     }
 }
 .contact-section__content__side-bar {
     padding: 0;
     margin: 0;
-    list-style: none;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    // list-style: none;
+    list-style-position: inside;
     &__item{
+        margin-bottom: 30px;
+         list-style-position: inside;
         &__text {
             margin: 0;
         }
