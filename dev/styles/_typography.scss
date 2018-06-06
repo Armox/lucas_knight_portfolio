@@ -81,6 +81,14 @@ a {
         letter-spacing: 3px;
         -webkit-font-smoothing: antialiased;
         margin: 42px 0;
+        @media screen and (max-width: $break1) {
+                margin: 32px;
+                letter-spacing: 2px;
+            }
+        @media screen and (max-width: $break2) {
+            margin: 21px;
+            font-size: 1.1rem;
+        }
     }
 }
 
