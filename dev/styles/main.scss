@@ -282,6 +282,7 @@ label {
         &__item__text:nth-of-type(odd) {
             grid-column: 2;
             margin: 0 16px;
+            text-align: right;
             @media screen and (max-width: $break1) {
                 grid-column: 1;
             }
