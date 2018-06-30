@@ -1,8 +1,3 @@
-// font-smoothing
-// Raleway font spelled incorrectly
-// fix padding on nav bar
-// hover on buttons
-
 @import 'setup';
 @import 'utils';
 @import 'typography';
@@ -57,7 +52,6 @@
     }
     &__menu {
         margin: 0;
-        // width: 60%;
         padding: 0;
         float: right;
         text-align: center;
@@ -81,7 +75,6 @@
     }
     &__menu li{
         display: inline-block;
-        // height: 100%;
     }
 }
 
@@ -123,10 +116,10 @@ label {
 
 // ==== ABOUT-SECTION ====
 .about-section {
-    background: #f7f7f7;
+    background:rgba(247, 247, 247, 0.9);
     text-align: center;
     max-width: 900px;
-    margin: 0 auto;
+    margin: 60px auto;
     color: #1c555f;
     overflow: hidden;
     &__content {
@@ -164,6 +157,7 @@ label {
     &__para {
         max-width: 600px;
         margin: auto;
+        text-align: left;
     }
 
     &__list {
@@ -189,7 +183,6 @@ label {
 
 // ==== SKILLS-SECTION ====
 .skills-section {
-    background: #ffffff;
     &__list {
         display: grid;
         align-items: start;
@@ -219,6 +212,7 @@ label {
 
 // ==== PORTFOLIO-SECTION ====
 .portfolio-section {
+    margin: 60px 0;
     &__title {
         background: #f7f7f7;
         position: relative;
@@ -278,11 +272,12 @@ label {
         }
         &__item:nth-of-type(even) {
             background: #ffffff;
+            text-align: right;
          }
-        &__item__text:nth-of-type(odd) {
+
+        &__item__text {
             grid-column: 2;
             margin: 0 16px;
-            text-align: right;
             @media screen and (max-width: $break1) {
                 grid-column: 1;
             }
@@ -329,7 +324,7 @@ label {
     }
     &__content {
         display: grid;
-        grid-template-columns: 1fr 3fr;
+        grid-template-columns: 1.15fr 3fr;
         max-width: 900px;
         grid-column-gap: 84px;
         margin: 125px auto 0 auto;
@@ -449,4 +444,17 @@ label {
             text-align: center;
         }
     }
+}
+
+//=== PARALLAX === 
+.parallax-window {
+    // width: 80%;
+    padding: 10px 0;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.parallax-cover {
+    // background: rgba(255, 255, 255, 0.75);
+    max-width: 900px;
+    margin: 0 auto;
 }

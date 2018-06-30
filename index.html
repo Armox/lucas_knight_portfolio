@@ -8,12 +8,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"              integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
         crossorigin="anonymous">
     <link rel="stylesheet" href="./public/styles/style.css">
-    <title>Lucas Knight</title>
+    <title>🦉Lucas Knight</title>
 </head>
 <body>
     <!-- ==== HEADER ==== -->
     <header class="main-header" id="home">
-        
         <nav class="nav">
             <div class="nav__wrapper clearfix">
                 <h2 class="nav__name">Lucas Knight</h2>
@@ -55,8 +54,7 @@
         <div class="about-section__content">
             <h3 class="about-section__title">about me</h3>
             <img src="public/assets/images/portrait.jpg" alt="Portrait Photograph" class="about-section__img">
-            <p class="about-section__para">My life has taken a relatively circuitous route, involving everything from military experience to working for NGOs
-            in developing countries. My passions for game development and pixel art have culminated in recent years in an enthusiastic persuit of all things web development.</p>
+            <p class="about-section__para">The web is at it's best when it's created by people with different experiences, and that's one of the many assets I bring to a team. With experiences involving everything from the military to working with NGOs in developing countries, I bring enthusiasm, dedication and hustle to everything I do. For over a year, I've been enthusiastically studying all things web development, and I'm looking forward to joining a team and hitting the ground running.</p>
             <ul class="about-section__list">
                 <li class="about-section__list__item">
                     <a href="https://twitter.com/PixelsByLucas" target="_blank"><i class="fab fa-twitter-square"></i></a>
@@ -69,28 +67,36 @@
             </ul>
         </div>
     </section>
-     <!-- ==== SKILLS SECTION ==== -->
+    <!-- ==== SKILLS SECTION ==== -->
+    <div class="parallax-cover">
+        <div class="parallax-window" 
+        data-parallax="scroll" 
+        data-image-src="/public/assets/images/Tutorial.jpg"
+        data-natural-width="2928"
+        data-natural-height="4080">
     <section class="skills-section">
         <ul class="skills-section__list">
             
-            <li class="skills-section__list__item">
-                <img src="../public/assets/icons/css3.svg" alt="css3 icon">
-            </li>
+            
             
             <li class="skills-section__list__item">
-                <img src="../public/assets/icons/html5.svg" alt="html5 icon">
+                <img src="../public/assets/icons/react.svg" alt="react icon">
             </li>
             
             <li class="skills-section__list__item">
                 <img src="../public/assets/icons/javaScript.svg" alt="JavaScript icon">
             </li>
-            
+
             <li class="skills-section__list__item">
-                <img src="../public/assets/icons/jquery.svg" alt="jQuert icon">
+                <img src="../public/assets/icons/html5.svg" alt="html5 icon">
             </li>
 
             <li class="skills-section__list__item">
-                <img src="../public/assets/icons/react.svg" alt="react icon">
+                <img src="../public/assets/icons/css3.svg" alt="css3 icon">
+            </li>
+            
+            <li class="skills-section__list__item">
+                <img src="../public/assets/icons/jquery.svg" alt="jQuert icon">
             </li>
 
             <li class="skills-section__list__item icon--sass">
@@ -98,7 +104,9 @@
             </li>
         </ul>
     </section>
-     <!-- ==== PORTFOLIO SECTION ==== -->
+    </div>
+    </div>
+    <!-- ==== PORTFOLIO SECTION ==== -->
     <section class="portfolio-section" id="portfolio">
         <div class="portfolio-section__gallery">
             <h3 class="portfolio-section__title">portfolio</h3>
@@ -109,7 +117,7 @@
                 <div class="portfolio-section__gallery__item__text clearfix">
                     <h4>simpleflex</h4>
                     <p>A simple PSD conversion. Built with BEM, SASS and CSS grid to be fully responsive on mobile or desktop.</p>
-                    <a href="/simpleflex">View
+                    <a href="/simpleflex" class="viewBtns">View
                         <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
@@ -118,7 +126,7 @@
                 <div class="portfolio-section__gallery__item__text clearfix">
                     <h4>grow your fruit</h4>
                     <p>Utilizing jQuery and SASS, Grow Your Fruit is a short quiz designed to provide the user with a fruit tree or berry bush capable of growing in their climate.</p>
-                    <a href="/grow_your_fruit">View
+                    <a href="/grow_your_fruit" class="viewBtns">View
                         <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
@@ -132,7 +140,7 @@
                 <div class="portfolio-section__gallery__item__text clearfix">
                     <h4>emoji expressions</h4>
                     <p>Using the Microsoft Face API, this project processes a user submitted image and returns an emoji that matches the user's facial expression. </p>
-                    <a href="/emoji">View
+                    <a href="/emoji" class="viewBtns">View
                         <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
@@ -141,7 +149,7 @@
                 <div class="portfolio-section__gallery__item__text clearfix">
                     <h4>eat drink toronto</h4>
                     <p>Built in React, this project makes two API calls to provide the user with an LCBO beer and a take-out restaurant according to the user's cuisine preferences.</p>
-                    <a href="/eat-drink_toronto">View
+                    <a href="/eat-drink_toronto" class="viewBtns">View
                         <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
@@ -156,7 +164,7 @@
                 <div class="portfolio-section__gallery__item__text clearfix">
                     <h4>Emoji Pet</h4>
                     <p>A virtual pet game made in the Phaser3 framework. All the game graphics are Emojis, and it's been optimized for mobile browsers with a full screen feature.</p>
-                    <a href="emoji_pet">Play
+                    <a href="emoji_pet" class="viewBtns">Play
                         <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
@@ -236,6 +244,8 @@
     </footer>
     <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- parallax.js  -->
+    <script src="./public/scripts/parallax.min.js"></script>
     <!-- my scripts -->
     <script src="./public/scripts/main.js"></script>
 </body>
